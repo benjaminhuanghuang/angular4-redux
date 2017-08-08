@@ -24,3 +24,15 @@
   }
   ```
 
+## Using NgRedux
+  app.module.ts
+  ```
+  import {NgReduxModule, NgRedux } from 'ng2-redux';
+  import {store, IAppState } from './store';
+
+  export class AppModule { 
+    constructor(ngRedux: NgRedux<IAppState>){
+      ngRedux.provideStore(store);
+    }
+  }
+  ```
