@@ -5,6 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { ToastService } from '../blocks/toast';
 import { ModalService } from '../blocks/modal';
 
+
 @Component({
   templateUrl: './course.component.html',
 })
@@ -100,5 +101,4 @@ export class CourseComponent implements OnInit, AfterContentChecked {
   ngAfterContentChecked() {
     componentHandler.upgradeDom();
   }
-
 }
